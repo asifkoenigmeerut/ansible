@@ -1,0 +1,14 @@
+---
+ - hosts: prod
+   tasks:
+   - name: create some users 
+     user:
+      name: "{{ item }}"
+      state: present
+     loop:
+      - dan
+      - ram
+      - jhon
+      - gaurav
+      - zia
+
