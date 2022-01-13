@@ -5,8 +5,8 @@
      yum:
        name: mariadb-server
        state: present
-  - name: create user
-    user:
+   - name: create user
+     user:
       name: magic
       state: present
 
