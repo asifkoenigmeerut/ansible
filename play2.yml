@@ -3,6 +3,10 @@
    tasks:
    - name: remove httpd
      yum:
-       name: "{{ pack_name }}"
-       state: absent
+       name: mariadb-server
+       state: present
+  - name: create user
+    user:
+      name: magic
+      state: present
 
