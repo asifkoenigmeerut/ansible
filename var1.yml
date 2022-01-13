@@ -1,5 +1,5 @@
 ---
- - hosts: prod
+ - hosts: 172.25.231.242
    vars:
      pkgs: vsftpd 
      users: sarah
